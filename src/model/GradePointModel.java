@@ -6,7 +6,7 @@ import java.util.*;
  * @author: Akshay Jain Bohara
  * @package: model
  * @project: gpa-calc
- * @desc: null
+ * @desc: Grade Point Average Model
  */
 public class GradePointModel extends Observable{
 
@@ -76,7 +76,7 @@ public class GradePointModel extends Observable{
     public void getGradePoint(){
         calculateGradePoint();
 
-        // Round GPA to 2nd Decimal
+        // Round GPA to 4th Decimal
         this.gradePointAverage = (Math.round(this.gradePointAverage * 1000.0d) / 1000.0d);
 
         setChanged();
